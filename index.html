@@ -3,7 +3,7 @@
 
 <head>
         <!-- Auto refreshes the website during development -->
-        <meta http-equiv="refresh" content="10" >
+        <!-- <meta http-equiv="refresh" content="3" > -->
 
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,6 @@
         <link rel="shortcut icon" type="image/x-icon" href="" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Reem+Kufi">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -27,6 +24,7 @@
         <link rel="stylesheet" href="css/style.css">
 
         <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <!-- Script to scroll via the navigation bar -->
@@ -70,86 +68,217 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="container about" id="about">
+    <div class="container about">
         <div class="row">
+
+            <!-- Stops the navigation bar from blocking when anchoring -->
+            <h3><span id="about"></span></h3>
+
             <img src="img/me.jpg" class="img-responsive img-circle center-block profile" width="200"/>
             <h1>About Me</h1>
-            <p>My name is Ming!
-                <br>
-                <br> I am currently a junior at City College of New York (CCNY) studying Computer Science, who is experienced in
-                <strong>game design, web applications, iOS development</strong>, and
-                <strong>exploratory programming</strong>.
-                <br>
-                <br> At first, I had no idea what I was getting myself into. But words could not express the feeling and enjoyment of creation through my experience in programming. All the things I've taken for granted or enjoyed has always been developed
-                 through code. My passion lies in creating elegant, but simple tools/applications for people to use everyday. And hopefully in the future, my code can change your life too.
-                <br>
-                <br> Now that you know about me a bit more, feel free to check out my portfolio. You're also more than welcome to contact me via email below!
-            </p>
+            <p> My name is Ming! I am currently a junior at Brooklyn College working towards a second degree in Computer Science. I received my first bachelor's degree in Nutrition &amp; Psychology at New York University (NYU) but have since decided to pursue a career in the tech industry instead. After graduating from Brooklyn College, I aspire to become a software developer or mobile applications developer. </p>
+            <p> My love for technology came from when I was a child allowed to tinker with on my brother's computer. From that point on, I have seen technology rise to becoming the ubiquitous presence in our daily lives: it is here to simplify our daily tasks, connect us over large distances; it can be utilized to provide valued content, tap into new markets and increase revenues; and it increases the seamlessness within businesses and between businesses. Nevertheless, it is also astounding to remember that so much has been made possible from lines of code and that amazing software can be developed to completely change how the world runs overnight. It's this wonder and possiblity, the challenge of creating something something that improve everybody's lives that nurtures my love for programming. </p>
+            <p> Want to get to know me better? Have any other questions? Feel free to <a class="scroll" href="#contact">contact me</a>! </p>
         </div>
     </div>
     <hr>
 
-    <div class="container experience" id="experience">
+    <div class="container experience">
         <div class="row">
+
+            <!-- Stops the navigation bar from blocking when anchoring -->
+            <h3><span id="experience"></span></h3>
+
             <h1>Experience</h1>
-            <p>My name is Ming!
-                <br>
-                <br> I am currently a junior at City College of New York (CCNY) studying Computer Science, who is experienced in
-                <strong>game design, web applications, iOS development</strong>, and
-                <strong>exploratory programming</strong>.
-                <br>
-                <br> At first, I had no idea what I was getting myself into. But words could not express the feeling and enjoyment of creation through my experience in programming. All the things I've taken for granted or enjoyed has always been developed
-                 through code. My passion lies in creating elegant, but simple tools/applications for people to use everyday. And hopefully in the future, my code can change your life too.
-                <br>
-                <br> Now that you know about me a bit more, feel free to check out my portfolio. You're also more than welcome to contact me via email below!
-            </p>
+
+            <div class="btn-group" role="group">
+                <!-- Button/modal #1 - CUNY Tech Prep -->
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#cunymodal">
+                    <img src="img/cunytechprep.jpg" class="img-responsivee center-block" />
+                    <br>
+                    <strong>Fullstack Intern</strong>
+                    <br>
+                    <em>CUNY Tech Prep</em>
+                    <br>
+                    June 2016 - Present
+                </button>
+
+                <div class="modal fade" id="cunymodal" tabindex="-1" role="dialog" aria-labelledby="modalLabel1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="modalLabel1"><strong>Fullstack Intern</strong>
+                                    <br><em>CUNY Tech Prep</em></h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Designed and programmed a personal/professional website using HTML/CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button/modal #2 - AHRC New York City -->
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#ahrcmodal">
+                    <img src="img/ahrc.jpg" class="img-responsivee center-block" />
+                    <br>
+                    <strong>Data Entry Specialist</strong>
+                    <br>
+                    <em>AHRC New York City</em>
+                    <br>
+                    Feb. 2016 - Present
+                </button>
+
+                <div class="modal fade" id="ahrcmodal" tabindex="-1" role="dialog" aria-labelledby="modalLabel2">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="modalLabel2"><strong>Data Entry Specialist</strong>
+                                    <br><em>AHRC New York City</em></h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Maintained the CRM system with the most recent information on clients and server providers</li>
+                                    <li>Entered new clients on the CRM system to increase membership and revenue from grants</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button/modal #3 - Chess NYC -->
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#chessnycmodal">
+                    <img src="img/chessnyc.jpg" class="img-responsivee center-block" />
+                    <br>
+                    <strong>Client Services Representative</strong>
+                    <br>
+                    <em>Chess NYC</em>
+                    <br>
+                    June 2015 - Sept. 2015
+                </button>
+
+                <div class="modal fade" id="chessnycmodal" tabindex="-1" role="dialog" aria-labelledby="modalLabel3">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="modalLabel3"><strong>Client Services Representative</strong>
+                                    <br><em>Chess NYC</em></h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Coordinated schedules between coaches, schools and clients</li>
+                                    <li>Oversaw all incoming orders, payments and delegated new clients to the staff</li>
+                                    <li>Prepared bi-weekly payroll reports to submit to Oasis Advantage (the PEO)</li>
+                                    <li>Handled most of the communications between staff, clients and payroll services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Button/modal #4 - NYU Stern -->
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#nyusternmodal">
+                    <img src="img/nyustern.gif" class="img-responsivee center-block" />
+                    <br>
+                    <strong>CITL Undergraduate Fellow</strong>
+                    <br>
+                    <em>NYU Stern School of Business</em>
+                    <br>
+                    May 2013 – June 2015
+                </button>
+
+                <div class="modal fade" id="nyusternmodal" tabindex="-1" role="dialog" aria-labelledby="modalLabel4">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="modalLabel4"><strong>CITL Undergraduate Fellow</strong>
+                                    <br><em>NYU Stern School of Business</em></h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Managed the teaching platform, Blackboard, used by professors and students</li>
+                                    <li>Resolved any general and technological inquiries from professors and students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button/modal #5 - New York Methodist Hospital -->
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#methodistmodal">
+                    <img src="img/methodist.jpg" class="img-responsivee center-block" />
+                    <br>
+                    <strong>Food &amp; Nutrition Volunteer</strong>
+                    <br>
+                    <em>New York Methodist Hospital</em>
+                    <br>
+                    Nov. 2013 – Aug. 2014
+                </button>
+
+                <div class="modal fade" id="methodistmodal" tabindex="-1" role="dialog" aria-labelledby="modalLabel5">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="modalLabel5"><strong>Food &amp; Nutrition Volunteer</strong>
+                                    <br><em>New York Methodist Hospital</em></h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Conducted numerous kitchen audits for safety and adherence to health regulations</li>
+                                    <li>Collected and modified patient menus in accordance to their diagnosis/health status</li>
+                                    <li>Performed numerous test tray evaluations for adherence of food safety and HAACP guidelines</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
     <hr>
 
-    <div class="container education" id="education">
+    <div class="container education">
         <div class="row">
+
+            <!-- Stops the navigation bar from blocking when anchoring -->
+            <h3><span id="education"></span></h3>
+
             <h1>Education</h1>
-            <p>My name is Ming!
-                <br>
-                <br> I am currently a junior at City College of New York (CCNY) studying Computer Science, who is experienced in
-                <strong>game design, web applications, iOS development</strong>, and
-                <strong>exploratory programming</strong>.
-                <br>
-                <br> At first, I had no idea what I was getting myself into. But words could not express the feeling and enjoyment of creation through my experience in programming. All the things I've taken for granted or enjoyed has always been developed
-                 through code. My passion lies in creating elegant, but simple tools/applications for people to use everyday. And hopefully in the future, my code can change your life too.
-                <br>
-                <br> Now that you know about me a bit more, feel free to check out my portfolio. You're also more than welcome to contact me via email below!
-            </p>
+            <p>B.S. Computer Science, Brooklyn College, 2015-2017</p>
+            <p>B.S. Nutrition &amp; Psychology, New York University, 2011-2015</p>
         </div>
     </div>
     <hr>
 
-    <div class="container interests" id="interests">
+    <div class="container interests">
         <div class="row">
+
+            <!-- Stops the navigation bar from blocking when anchoring -->
+            <h3><span id="interests"></span></h3>
+
             <h1>Interests</h1>
-            <p>My name is Ming!
-                <br>
-                <br> I am currently a junior at City College of New York (CCNY) studying Computer Science, who is experienced in
-                <strong>game design, web applications, iOS development</strong>, and
-                <strong>exploratory programming</strong>.
-                <br>
-                <br> At first, I had no idea what I was getting myself into. But words could not express the feeling and enjoyment of creation through my experience in programming. All the things I've taken for granted or enjoyed has always been developed
-                 through code. My passion lies in creating elegant, but simple tools/applications for people to use everyday. And hopefully in the future, my code can change your life too.
-                <br>
-                <br> Now that you know about me a bit more, feel free to check out my portfolio. You're also more than welcome to contact me via email below!
-            </p>
+            <p></p>
         </div>
     </div>
     <hr>
 
-    <div class="container contact" id="contact">
+    <div class="container contact">
         <div class="row">
+
+            <!-- Stops the navigation bar from blocking when anchoring -->
+            <h3><span id="contact"></span></h3>
+
             <h1>Contact Me</h1>
             <p>
-                <i class="fa fa-phone"></i> (347)-882-1263<br>
-                <i class="fa fa-envelope-o"></i>
-                <a href="mailto:ming.yang@nyu.edu"> ming.yang@nyu.edu</a>
+                <i class="fa fa-envelope-o"></i><a href="mailto:ming.yang@nyu.edu"> ming.yang@nyu.edu</a>
+                <br><i class="fa fa-phone"></i> (347)-882-1263
             </p>
 
             <div class="social">
@@ -162,6 +291,12 @@
             <p id="copyright">Copyright © Ming Yang 2016</p>
         </div>
     </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
