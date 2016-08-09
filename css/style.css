@@ -46,12 +46,19 @@ p {
 	position: relative;
 }
 
+.button {
+	margin: 0px auto;
+}
 .contact {
 	font-size: 1.35em;
 }
 
 .contact #copyright {
 	font-size: 0.6em;
+}
+
+.education p {
+	font-size: 1.2em;
 }
 
 .experience strong {
@@ -67,12 +74,19 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 200px;
-	min-height: 200px;
-	height: auto;
+	height: 200px;
 	border: 1px solid black;
 	-moz-border-radius: 150px;
 	position: relative;
 	-o-object-fit: contain;
+}
+
+.experience .btn {
+	min-width: 250px;
+}
+
+.experience .modal-body li {
+	text-align: left;
 }
 
 .navbar-custom .nav li a {
@@ -81,6 +95,15 @@ p {
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
+}
+
+.skills p {
+	text-align: left;
+	margin-left: 3em;
+}
+
+.skills #lang-list {
+	font-size: 1.2em;
 }
 
 .social {
