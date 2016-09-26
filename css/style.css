@@ -49,6 +49,12 @@ p {
 .button {
 	margin: 0px auto;
 }
+
+.carousel-caption{
+	font-size: 1.1vw;
+	color: #FFEFD5;
+}
+
 .contact {
 	font-size: 1.35em;
 }
@@ -95,6 +101,10 @@ p {
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
+}
+
+.projects h1 {
+	padding-bottom: 3vh;
 }
 
 .skills p {
